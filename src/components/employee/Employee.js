@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import AddEmployee from "./AddEmployee";
-import EmpList from "./EmpList";
+//import AddEmployee from "./AddEmployee";
+//import EmpList from "./EmpList";
 import { useEffect, useState } from "react";
-import axios from "axios";
+//import axios from "axios";
 import EmployeeService from "../../services/EmployeeService";
 import { setEmpList } from "../../redux/EmpSlice";
 import { useDispatch, useSelector } from "react-redux";
@@ -94,7 +94,7 @@ const Employee = () => {
         </form>
       </div>
 
-      {searchData.length != 0 && (
+      {searchData.length !== 0 && (
         <>
           {afterSearch && <p className="lead">{afterSearch}</p>}
           <table>
@@ -102,7 +102,7 @@ const Employee = () => {
               <th>Name</th> <th>Salary</th> <th>Email</th>
             </thead>
             <tbody>
-              {searchData.length != 0 &&
+              {searchData.length !== 0 &&
                 searchData.map((emp) => (
                   <tr key={searchData.id}>
                     {/* <td >{emp.employeeId} </td> */}
