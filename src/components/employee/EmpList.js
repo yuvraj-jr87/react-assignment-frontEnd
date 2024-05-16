@@ -1,5 +1,5 @@
 //import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setEmpObj, setEmpList } from "../../redux/EmpSlice";
